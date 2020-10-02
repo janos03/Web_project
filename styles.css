@@ -1,0 +1,111 @@
+#wrapper
+{
+    width:1250px;
+    margin:auto;
+    border:3px solid black;
+    border-radius:75px;
+    padding:45px;
+    background-color:rgba( 101, 229, 255 ,0.5);
+    color:white;
+}
+
+body
+{
+    background-image:url(tavoktatas.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+article
+{
+    text-align:justify;
+}
+
+header
+{
+    background-color: rgba(139, 0, 0, 0);
+    padding:4px;
+    text-align:center;
+    font-family: "Brush Script MT";
+    font-size:24px;
+}
+
+ul
+{
+    list-style-type: square;
+    display: inline-block;
+}
+
+nav ul li
+{
+    display: inline-block;
+    width:180px;
+    font-size:24px;
+    border:2px solid black;
+    border-radius:20px;
+    text-align:center;
+    margin: 0 10px;
+    background-color: darkblue;
+}
+
+nav ul li a
+{
+    color:black;
+    text-decoration: none;
+    transition:1s;
+    background-color: darkblue;
+}
+
+nav ul li a:hover
+{
+    color:white;
+    background-color: darkblue;
+}
+
+nav
+{
+    text-align:center;
+    margin:50px;
+}
+p
+{
+    width:250px;
+    margin:auto;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding:10px;
+    font-size:32px;
+    text-align: center;
+    transition:1s;
+}
+.kozep
+{
+    width:750px; 
+    padding:20px;
+    border: 0px;
+}
+
+
+#ora
+{
+    background-color: rgba(0, 0, 150, 0.9);
+    text-align: center;
+    margin:auto;
+}
+
+.card {
+    margin: 30px auto;
+    width: 80%;
+    text-align: center;
+}
+
+.container {
+  padding: 40px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+    background-color: rgba(139, 0, 0, 0);
+}
+
+
+
