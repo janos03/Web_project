@@ -211,3 +211,24 @@
     #logo {
         float: left;
     }
+
+    td
+    {
+    text-align: center;
+        padding: 30px;
+        width: 550;
+        
+    }
+    
+    th
+    {
+    text-align: center;
+        padding: 10px; 
+    }
+
+    tr
+{
+    width: 1100px;
+}
+    
+    
