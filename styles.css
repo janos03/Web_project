@@ -14,9 +14,8 @@
         background-attachment: fixed;
         color: #616c77;
         text-align: justify;
-        text-align-last: center;
-        margin-left: 2cm;
-        margin-right: 2cm;
+        margin-left: 0cm;
+        margin-right: 0.2cm;
     }
     
     nav ul li {
@@ -41,7 +40,8 @@
     }
     
     #ora {
-        background-color: #051622;
+        background-image: url(f183cfbe93b17c4dae2896e2610ba077.jpg);
+        background-color: #051622f6;
         text-align: center;
         margin: auto;
         color: #DEB992;
@@ -64,19 +64,22 @@
     * {
         margin: 0;
         padding: 0;
-        box-sizing: content-box;
+        box-sizing: inherit;
     }
     
     html {
         font-size: 10px;
         font-family: 'Times New Roman', Times, serif;
+        scroll-behavior: smooth;
     }
     
     #header {
         width: 100%;
-        height: 25vh;
-        background-color: #051622;
+        height: 400px;
         position: relative;
+        background-image: url(f183cfbe93b17c4dae2896e2610ba077.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
     
     h1 {
@@ -84,9 +87,9 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 5rem;
+        font-size: 79px;
         color: #DEB992;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: 100;
         text-transform: uppercase;
     }
@@ -122,26 +125,16 @@
         position: relative;
         background-color: #051622;
         font-size: 24px;
+        float: left;
     }
     
     section h1 {
         top: 20rem;
     }
     
-    footer {
-        position: relative;
-        height: 20rem;
-        background-color: #051622;
-    }
-    
     h2 {
         font-size: 48px;
         color: #DEB992;
-        ;
-    }
-    
-    section p {
-        height: 80px;
     }
     
     .darkmode {
@@ -150,9 +143,9 @@
     
     hr {
         display: block;
-        height: 3px;
+        height: 0px;
         border: 0;
-        border-top: 1px solid #ccc;
+        border-top: 2px solid #DEB992;
         margin: 1em 0;
         padding: 0;
     }
@@ -163,6 +156,58 @@
         font-size: 16px;
     }
     
-    .dropdown.item {
-        color: red;
+    footer {
+        float: left;
+        position: absolute;
+        bottom: -800%;
+        left: 0;
+        right: 0;
+    }
+    
+    .szukseg,
+    .elonye,
+    .kivitelezes,
+    .forras {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        height: 1000px;
+    }
+    
+    .szoveg-resz {
+        line-height: 62px;
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+    
+    .elonye,
+    .forras {
+        background-color: #0a2b42;
+    }
+    
+    nav ul li::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 7px;
+        bottom: 65px;
+        left: 0;
+        right: 0;
+        background-color: #DEB992;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all .3s ease-in-out 0s;
+    }
+    
+    nav ul li:hover::before {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+    
+    #logo {
+        float: left;
     }
