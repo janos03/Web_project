@@ -74,9 +74,9 @@
         scroll-behavior: smooth;
     }
     
-    #header {
+    #particles-js {
         width: 100%;
-        height: 400px;
+        height: 100vh;
         position: relative;
         background-image: url(f183cfbe93b17c4dae2896e2610ba077.jpg);
         background-repeat: no-repeat;
@@ -265,8 +265,8 @@
         height: 300px;
         bottom: 0px;
         top: 400px;
-        left: 0;
-        right: 0;
+        left: 50;
+        right: 50;
         background-color: #1BA098;
         visibility: hidden;
         transform: scaleX(0);

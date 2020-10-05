@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+#particles-js {
+    height: 100%;
+    background-image: url(5a3ed79be9555a6dab20b49dc423b840.jpg);
+    background-size: cover;
+    background-position: center;
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+        background: url(5a3ed79be9555a6dab20b49dc423b840.jpg) no-repeat center center fixed;
+    }
+}
+
+header {
+    float: left;
+}
