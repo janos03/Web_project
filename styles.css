@@ -72,6 +72,7 @@
         font-size: 10px;
         font-family: 'Times New Roman', Times, serif;
         scroll-behavior: smooth;
+        overflow-x: hidden;
     }
     
     #particles-js {
@@ -80,7 +81,10 @@
         position: relative;
         background-image: url(f183cfbe93b17c4dae2896e2610ba077.jpg);
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+            background: url(f183cfbe93b17c4dae2896e2610ba077.jpg) no-repeat center center fixed;
+        }
     }
     
     h1 {
@@ -157,11 +161,11 @@
     }
     
     footer {
-        float: left;
         position: absolute;
-        bottom: -800%;
         left: 0;
         right: 0;
+        bottom: -450%;
+        font-size: 24px;
     }
     
     .szukseg,
@@ -285,4 +289,39 @@
     
     .navbar-nav>li {
         float: right;
+    }
+    
+    #kartya1 {
+        font-size: 1px;
+        background-color: #051622;
+        color: #1BA098;
+        border: 0px solid white;
+    }
+    
+    .card-text {
+        font-size: 24px;
+        color: #DEB992;
+    }
+    
+    .card-title {
+        font-size: 36px;
+    }
+    
+    #canvas {
+        position: fixed;
+        left: 0;
+        top: 95%;
+        width: 100%;
+        height: 5%;
+        background-color: rgba(0, 0, 0, 1);
+    }
+    
+    audio {
+        left: 10px;
+        bottom: 0px;
+        width: calc(100% - 20px);
+    }
+    
+    #canvas {
+        opacity: 0.5;
     }

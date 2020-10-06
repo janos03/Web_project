@@ -10,6 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -54,7 +55,7 @@
                                 </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Éjszakai mód</a>
-                                <a class="dropdown-item" href="#">Gravity</a>
+                                <a class="dropdown-item" id="zene" onclick="zene()"> zene</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
@@ -159,42 +160,47 @@
         <p>
 
             <div class="kivitelezes" id="Kivitelezése">
+                <h2>
+                    <span id="Forrás" class="mw-headline"><u><b>Kivitelezése avagy milyen alkalmazásokat lehet(ett) használni?</b></u></span></h2>
+                <div class="container-fluid">
+                    <div class="row" id="kartya">
+                        <div class="card col-lg-3 col-md-12" data-aos="fade-up-right" data-aos-duration="2000" id="kartya1">
+                            <img class="card-img-top" src="1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div class="card col-lg-3 col-md-12" data-aos="zoom-out-up" data-aos-duration="2000" id="kartya1">
+                            <img class="card-img-top" src="1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div class="card col-lg-3 col-md-12" data-aos="fade-up-left" data-aos-duration="2000" id="kartya1">
+                            <img class="card-img-top" src="1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="szoveg-resz">
 
-                    <h2>
-                        <span id="Forrás" class="mw-headline"><u><b>Kivitelezése avagy milyen alkalmazásokat lehet(ett) használni?</b></u></span></h2>
 
                     A távoktatásra használt legnépszerűbb kommunikációs felületek részét képezte elsősorban az E-mail, a Google Classroom, a Cisco Webex és esetenként a Facebook is. Sokkal egyszerűbbé tehette volna a kommunikációt az, ha kevesebb ilyen felület használatára
                     kerül sor. Ez megvalósítható lett volna csak a Google Classroom, az E-mail és például a Discord vagy a ZOOM vagy akár a Webex használatával, ahol valós idejű kommunikáció jön létre egyszerre több személy között is akár és még a képernyő
                     megosztásra is van lehetőség.
                 </div>
+
             </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="card col-lg-3 col-md-12">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                    <div class="card col-lg-3 col-md-12">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                    <div class="card col-lg-3 col-md-12">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </p>
+
+    </section>
+    <footer>
         <p>
 
 
@@ -213,48 +219,27 @@
             </div>
 
         </p>
-    </section>
-    <!--<footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="..." alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="..." alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <input type="range" name="ala" id="magassag" min="1" max="100" step="1" value="1" onchange="updateSlider()">
+        <div id="content">
+            <input type="file" id="thefile" accept="audio/*" />
+            <canvas id="canvas"></canvas>
+            <audio id="audio" controls></audio>
 
-                <div class="col-sm">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div>
+        <div>
+            <span>
+            </span>
+        </div>
 
-        </footer>-->
+    </footer>
     <script src="particles.js" type="text/javascript"></script>
     <script src="app.js" type="text/javascript"></script>
     <script src="script.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="audio.js"></script>
 </body>
 
 </html>
