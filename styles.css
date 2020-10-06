@@ -156,8 +156,12 @@
     
     .dropdown-menu {
         background-color: #051622;
-        color: #a4b5c7;
+        color: #1BA098;
         font-size: 16px;
+    }
+    
+    .dropdown-item {
+        color: #1BA098;
     }
     
     footer {
@@ -236,6 +240,7 @@
     .elony {
         color: rgb(100, 118, 139);
         height: 700px;
+        line-height: 77px;
     }
     
     table {
@@ -244,12 +249,8 @@
     }
     
     .hatrany {
-        color: rgb(100, 118, 139);
         height: 700px;
-    }
-    
-    #hatr {
-        color: #0d524d;
+        color: rgb(100, 118, 139);
     }
     
     .forraslink {
@@ -317,12 +318,22 @@
         background-color: rgba(0, 0, 0, 1);
     }
     
+    #thefile {
+        border: 2px solid #1BA098;
+        float: left;
+        z-index: 1;
+        width: 100%;
+    }
+    
     audio {
         left: 10px;
         bottom: 0px;
         width: calc(100% - 20px);
+        float: left;
+        z-index: 1;
     }
     
     #canvas {
         opacity: 0.5;
+        z-index: 0;
     }

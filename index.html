@@ -54,10 +54,13 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>Beállítások</b>
                                 </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Éjszakai mód</a>
-                                <a class="dropdown-item" id="zene" onclick="zene()"> zene</a>
+                                <a class="dropdown-item" href="#"> <input type="file" id="thefile" accept="audio/*" /></a>
+                                <a class="dropdown-item" id="zene" onclick="zene()"> Zene ki/be</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" id="kicsi" onclick="kicsi()">Zenesáv méret: Kicsi</a>
+                                <a class="dropdown-item" id="kozepes" onclick="kozepes()">Zenesáv méret: Közepes</a>
+                                <a class="dropdown-item" id="nagy" onclick="nagy()">Zenesáv méret: Nagy</a>
+
                             </div>
                         </li>
                     </ul>
@@ -108,7 +111,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <ul class="elony">
+                                <ul class="elony" data-aos="fade-up-right" data-aos-duration="2000" data-aos-delay="100">
                                     <li>
                                         <h3>Tanulási lehetőséget nyújt azoknak, akik egyébként hagyományos iskolai keretek között nem tudnának tanulni.</h3>
                                     </li>
@@ -131,7 +134,7 @@
                             </td>
 
                             <td>
-                                <ul class="hatrany">
+                                <ul class="hatrany" data-aos="fade-up-left" data-aos-duration="2000" data-aos-delay="100">
                                     <li>
                                         <h3>A személyközi kommunikáció és a közös tevékenység hiánya csökkentheti a motivációt, így a lemorzsolódás a képzések egy részénél igen magas.</h3>
                                     </li>
@@ -159,13 +162,13 @@
         <br>
         <p>
 
-            <div class="kivitelezes" id="Kivitelezése">     
+            <div class="kivitelezes" id="Kivitelezése">
                 <h2>
                     <span id="Forrás" class="mw-headline"><u><b>Kivitelezése avagy milyen alkalmazásokat lehet(ett) használni?</b></u></span></h2>
                 <div class="szoveg-resz">
                     A távoktatásra használt legnépszerűbb kommunikációs felületek részét képezte elsősorban az E-mail, a Google Classroom, a Cisco Webex és esetenként a Facebook is. Sokkal egyszerűbbé tehette volna a kommunikációt az, ha kevesebb ilyen felület használatára
-                    kerül sor. Ez megvalósítható lett volna csak a Google Classroom, az E-mail és például a <u>Discord</u> vagy a <u>ZOOM</u> vagy akár a <u>Cisco Webex</u> használatával, ahol valós idejű kommunikáció jön létre egyszerre több személy között is akár és még a képernyő
-                    megosztásra is van lehetőség.
+                    kerül sor. Ez megvalósítható lett volna csak a Google Classroom, az E-mail és például a <u>Discord</u> vagy a <u>ZOOM</u> vagy akár a <u>Cisco Webex</u> használatával, ahol valós idejű kommunikáció jön létre egyszerre
+                    több személy között is akár és még a képernyő megosztásra is van lehetőség.
                 </div>
                 <div class="container-fluid">
                     <div class="row" id="kartya">
@@ -173,26 +176,29 @@
                             <a href="https://discord.com/" target="*"><img class="card-img-top" src="discordlogo.jpg" alt="Card image cap"></a>
                             <div class="card-body">
                                 <h5 class="card-title"><b>Discord</b></h5>
-                                <p class="card-text">A Discordot mindenfélére használják az emberek: az élő karaokeesttől kezdve a képernyőmegosztásos csoportos festésen át a virtuális esküvőig. Az emberek Discord-szervereket hoznak létre játékhoz, jógaórához, vígjátékrajongó klubhoz, akár egész podcasting vállalkozásukat is erre építik. A Discord mindenkinek segítség, akinek szüksége van egy helyre, hogy a barátaival és közösségeivel beszélgessen.</p>
+                                <p class="card-text">A Discordot mindenfélére használják az emberek: az élő karaokeesttől kezdve a képernyőmegosztásos csoportos festésen át a virtuális esküvőig. Az emberek Discord-szervereket hoznak létre játékhoz, jógaórához, vígjátékrajongó
+                                    klubhoz, akár egész podcasting vállalkozásukat is erre építik. A Discord mindenkinek segítség, akinek szüksége van egy helyre, hogy a barátaival és közösségeivel beszélgessen.</p>
                             </div>
                         </div>
                         <div class="card col-lg-3 col-md-12" data-aos="zoom-out-up" data-aos-duration="2000" id="kartya1">
                             <a href="https://zoom.us/" target="*"><img class="card-img-top" src="zoomlogo.jpg" alt="Card image cap"></a>
                             <div class="card-body">
                                 <h5 class="card-title"><b>ZOOM</b></h5>
-                                <p class="card-text">A Zoom egy olyan online eszköz, melynek segítségével sokan (akár több 100 -an is) “találkozni” tudunk helytől függetlenül. Működik böngészőből és letölthető számítógépre, telefonra, táblagépre is.  A Zoom egy csoportbeszélgetés vagy egy kisebb konferencia élményét képes nyújtani úgy, hogy közben otthon, vagy akár egy kávézóban ülünk.</p>
+                                <p class="card-text">A Zoom egy olyan online eszköz, melynek segítségével sokan (akár több 100 -an is) “találkozni” tudunk helytől függetlenül. Működik böngészőből és letölthető számítógépre, telefonra, táblagépre is. A Zoom egy csoportbeszélgetés
+                                    vagy egy kisebb konferencia élményét képes nyújtani úgy, hogy közben otthon, vagy akár egy kávézóban ülünk.</p>
                             </div>
                         </div>
                         <div class="card col-lg-3 col-md-12" data-aos="fade-up-left" data-aos-duration="2000" id="kartya1">
                             <a href="https://www.webex.com/" target="*"><img class="card-img-top" src="webexlogo.jpg" alt="Card image cap"></a>
                             <div class="card-body">
                                 <h5 class="card-title"><b>Cisco Webex</b></h5>
-                                <p class="card-text">Lehetséges, hogy egy online konferencia beszélgetés ugyanolyan hatékony legyen, mint egy személyes találkozó? A virtuális megbeszélések jelentőssége folyamatosan növekszik. A Cisco WebEx technológia lehetővé teszi a hatékony kommunikációt és biztosítja a szükséges eszközöket az alkalmazottaknak, beszállítóknak és partnereknek.</p>
+                                <p class="card-text">Lehetséges, hogy egy online konferencia beszélgetés ugyanolyan hatékony legyen, mint egy személyes találkozó? A virtuális megbeszélések jelentőssége folyamatosan növekszik. A Cisco WebEx technológia lehetővé teszi a hatékony
+                                    kommunikációt és biztosítja a szükséges eszközöket az alkalmazottaknak, beszállítóknak és partnereknek.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
 
             </div>
 
@@ -218,10 +224,10 @@
             </div>
 
         </p>
-        <input type="range" name="ala" id="magassag" min="1" max="100" step="1" value="1" onchange="updateSlider()">
+
         <div id="content">
-            <input type="file" id="thefile" accept="audio/*" />
             <canvas id="canvas"></canvas>
+
             <audio id="audio" controls></audio>
 
         </div>

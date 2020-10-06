@@ -23,9 +23,20 @@ function zene() {
 
 }
 
-function updateSlider() {
+function kicsi() {
 
-    var x = document.getElementById("magassag").value
-    document.getElementById("canvas").style.height = "500px";
-    document.getElementById("canvas").style.top = "90%"
+    document.getElementById("canvas").style.height = "5%"
+    document.getElementById("canvas").style.top = "95%"
+
+}
+
+function kozepes() {
+    document.getElementById("canvas").style.height = "188px"
+    document.getElementById("canvas").style.top = "80%"
+}
+
+function nagy() {
+
+    document.getElementById("canvas").style.height = "375px"
+    document.getElementById("canvas").style.top = "60%"
 }
