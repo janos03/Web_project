@@ -15,10 +15,10 @@
 </head>
 
 <body onload="OraKiir()">
-    <p id="ora"></p>
+    <p id="ora" class="nemkijelolheto"></p>
     <div id="wrapper">
         <header id="particles-js" class="header">
-            <h1 id="Digitalis">
+            <h1 id="Digitalis" class="nemkijelolheto">
                 <hr class="vonal"> Digitális Oktatás
             </h1>
         </header>
@@ -60,6 +60,11 @@
                                 <a class="dropdown-item" id="kicsi" onclick="kicsi()">Zenesáv méret: Kicsi</a>
                                 <a class="dropdown-item" id="kozepes" onclick="kozepes()">Zenesáv méret: Közepes</a>
                                 <a class="dropdown-item" id="nagy" onclick="nagy()">Zenesáv méret: Nagy</a>
+                                <a class="dropdown-item" id="nagy"><input type="range" value="0.5" min="0" max="10" oninput="opacity()" id="atlatszo"> átlátszóság</a>
+                                <a class="dropdown-item" id="nagy"><input type="range" value="0.5" min="0" max="255" oninput="color()" id="red"> átlátszóság</a>
+                                <a class="dropdown-item" id="nagy"><input type="range" value="0.5" min="0" max="255" oninput="color()" id="green"> átlátszóság</a>
+                                <a class="dropdown-item" id="nagy"><input type="range" value="0.5" min="0" max="255" oninput="color()" id="blue"> átlátszóság</a>
+
 
                             </div>
                         </li>
@@ -215,10 +220,14 @@
                     <h2>
                         <span id="Forrás" class="mw-headline"><u><b class="alcim">Források:</b></u></span></h2>
                     <ul>
-                        <li><a href="https://bit.ly/2GtiIz0" target="*" class="forraslink">A digitális oktatás bevezetése igazgatói szemmel</a></li>
-                        <li><a href="https://bit.ly/2HKQJLI" target="*" class="forraslink">Wikipédia</a></li>
-                        <li><a href="https://bit.ly/34nAMTo" target="*" class="forraslink">Oktatási Hivatal</a></li>
-                        <li><a href="https://bit.ly/2GAHA7P" target="*" class="forraslink">Intézkedési terv a 2020/2021. tanévben</a></li>
+                        <li data-aos="fade-up"><a href="https://bit.ly/2GtiIz0" target="*" class="forraslink">A digitális oktatás bevezetése igazgatói szemmel</a></li>
+                        <iframe src="https://bit.ly/2GtiIz0" width="100%" data-aos="fade-up"></iframe>
+                        <li data-aos="fade-up"><a href="https://bit.ly/2HKQJLI" target="*" class="forraslink">Wikipédia</a></li>
+                        <iframe src="https://bit.ly/2HKQJLI" width="100%" data-aos="fade-up"></iframe>
+                        <li data-aos="fade-up"><a href="https://bit.ly/34nAMTo" target="*" class="forraslink">Oktatási Hivatal</a></li>
+                        <iframe src="https://bit.ly/34nAMTo" width="100%" data-aos="fade-up"></iframe>
+                        <li data-aos="fade-up"><a href="https://bit.ly/2GAHA7P" target="*" class="forraslink">Intézkedési terv a 2020/2021. tanévben</a></li>
+                        <iframe src="https://bit.ly/2GAHA7P" width="100%" data-aos="fade-up"></iframe>
                     </ul>
                 </div>
             </div>

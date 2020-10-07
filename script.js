@@ -40,3 +40,10 @@ function nagy() {
     document.getElementById("canvas").style.height = "375px"
     document.getElementById("canvas").style.top = "60%"
 }
+
+function opacity() {
+
+    var x = document.getElementById("atlatszo").value;
+    document.getElementById("canvas").style.opacity = x / 10
+
+}

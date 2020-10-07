@@ -43,15 +43,21 @@ window.onload = function() {
 
             ctx.fillStyle = "#051622";
             ctx.fillRect(0, 0, WIDTH, HEIGHT);
+            ctx.shadowBlur = 10;
+            ctx.shadowColor = "black";
+
 
             for (var i = 0; i < bufferLength; i++) {
                 barHeight = dataArray[i] + 100;
+
+
 
                 var r = barHeight + (27 * (i / bufferLength));
                 var g = 160 * (i / bufferLength);
                 var b = 152;
 
                 ctx.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
+
                 ctx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
 
                 x += barWidth + 1;
@@ -60,5 +66,9 @@ window.onload = function() {
 
         audio.play();
         renderFrame();
+
+
     };
 };
+
+r = document.getElementById("red").nodeValue;
