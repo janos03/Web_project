@@ -71,4 +71,8 @@ window.onload = function() {
     };
 };
 
-r = document.getElementById("red").nodeValue;
+function color() {
+    r = document.getElementById("red").value
+    g = document.getElementById("green").value
+    b = document.getElementById("blue").value
+}

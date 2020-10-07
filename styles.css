@@ -131,6 +131,7 @@
         background-color: #051622;
         font-size: 24px;
         float: left;
+        padding-bottom: 2.5rem;
     }
     
     section h1 {
@@ -168,10 +169,25 @@
     
     footer {
         position: absolute;
+        bottom: -450%;
         left: 0;
         right: 0;
-        bottom: -450%;
         font-size: 24px;
+        height: 2.5rem;
+        margin-top: -20000px;
+    }
+    
+    #footer {
+        height: 700px;
+    }
+    
+    #container-wrap {
+        padding-bottom: 2.5rem;
+    }
+    
+    #page-container {
+        position: relative;
+        min-height: 100vh;
     }
     
     .szukseg,
