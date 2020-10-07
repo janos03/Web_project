@@ -51,10 +51,13 @@ window.onload = function() {
                 barHeight = dataArray[i] + 100;
 
 
+                //var r = barHeight + (27 * (i / bufferLength));
+                //var g = 160 * (i / bufferLength);
+                //var b = 152;
 
-                var r = barHeight + (27 * (i / bufferLength));
-                var g = 160 * (i / bufferLength);
-                var b = 152;
+                var r = red;
+                var g = green * (i / bufferLength);
+                var b = blue;
 
                 ctx.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
 
@@ -72,7 +75,11 @@ window.onload = function() {
 };
 
 function color() {
-    r = document.getElementById("red").value
-    g = document.getElementById("green").value
-    b = document.getElementById("blue").value
+    red = document.getElementById("red").value
+    green = document.getElementById("green").value
+    blue = document.getElementById("blue").value
 }
+
+var red = 0;
+var green = 0;
+var blue = 0;

@@ -1,4 +1,4 @@
-    /*#wrapper {
+        /*#wrapper {
     width: 1250px;
     margin: auto;
     border: 3px solid black;
@@ -7,348 +7,405 @@
     background-color: rgba( 101, 229, 255, 0.5);
     color: white;
 }*/
-    
-    body {
-        background-color: #051622;
-        background-size: cover;
-        background-attachment: fixed;
-        color: #616c77;
-        text-align: justify;
-        margin-left: 0cm;
-        margin-right: 0.2cm;
-    }
-    
-    nav ul li {
-        padding: 0 1.5rem;
-        cursor: pointer;
-        display: inline-block;
-    }
-    
-    nav ul li a {
-        color: lightgray;
-        padding: 0px;
-        text-decoration: none;
-        transition: 1s;
-        cursor: default;
-        float: right;
-        font-size: 17px;
-    }
-    
-    nav ul li :hover {
-        color: rgb(0, 0, 0);
-        background-color: rgb(1, 46, 65);
-        transition: 0.2s;
-    }
-    
-    #ora {
-        background-image: url(f183cfbe93b17c4dae2896e2610ba077.jpg);
-        background-color: #051622f6;
-        text-align: center;
-        margin: auto;
-        color: #DEB992;
-    }
-    
-    .card {
-        margin: 30px auto;
-        width: 80%;
-        text-align: center;
-    }
-    
-    .container {
-        padding: 40px 80px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        background-color: rgba(139, 0, 0, 0);
-    }
-    
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: inherit;
-    }
-    
-    html {
-        font-size: 10px;
-        font-family: 'Times New Roman', Times, serif;
-        scroll-behavior: smooth;
-        overflow-x: hidden;
-    }
-    
-    #particles-js {
-        width: 100%;
-        height: 100vh;
-        position: relative;
-        background-image: url(f183cfbe93b17c4dae2896e2610ba077.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        @media only screen and (min-width: 320px) and (max-width: 480px) {
-            background: url(f183cfbe93b17c4dae2896e2610ba077.jpg) no-repeat center center fixed;
+        
+        body {
+            background-color: #051622;
+            background-size: cover;
+            background-attachment: fixed;
+            color: #616c77;
+            text-align: justify;
+            margin-left: 0cm;
+            margin-right: 0.2cm;
         }
-    }
-    
-    h1 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 79px;
-        color: #DEB992;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: 100;
-        text-transform: uppercase;
-        text-shadow: 0 0 20px #DEB992;
-    }
-    
-    #nav {
-        width: 100%;
-        background-color: #1BA098;
-        color: #333;
-        font-size: 2rem;
-        text-transform: uppercase;
-        font-weight: 100;
-        height: 6rem;
-        line-height: 6rem;
-        border-bottom: solid 2px #DEB992;
-        float: inherit;
-    }
-    
-    .navbar-container {
-        width: 100%;
-    }
-    
-    .fixed {
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 20;
-    }
-    
-    section {
-        width: 100%;
-        height: 200rem;
-        position: relative;
-        background-color: #051622;
-        font-size: 24px;
-        float: left;
-        padding-bottom: 2.5rem;
-    }
-    
-    section h1 {
-        top: 20rem;
-    }
-    
-    h2 {
-        font-size: 48px;
-        color: #DEB992;
-    }
-    
-    .darkmode {
-        background-color: black;
-    }
-    
-    hr {
-        display: block;
-        height: 0px;
-        border: 0;
-        border-top: 2px solid #DEB992;
-        margin: 1em 0;
-        padding: 0;
-        box-shadow: 0 0 20px #DEB992;
-    }
-    
-    .dropdown-menu {
-        background-color: #051622;
-        color: #1BA098;
-        font-size: 16px;
-    }
-    
-    .dropdown-item {
-        color: #1BA098;
-    }
-    
-    footer {
-        position: absolute;
-        bottom: -450%;
-        left: 0;
-        right: 0;
-        font-size: 24px;
-        height: 2.5rem;
-        margin-top: -20000px;
-    }
-    
-    #footer {
-        height: 700px;
-    }
-    
-    #container-wrap {
-        padding-bottom: 2.5rem;
-    }
-    
-    #page-container {
-        position: relative;
-        min-height: 100vh;
-    }
-    
-    .szukseg,
-    .elonye,
-    .kivitelezes,
-    .forras {
-        position: relative;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-direction: row;
-        width: 100%;
-        height: 1000px;
-    }
-    
-    .szoveg-resz {
-        line-height: 62px;
-        padding-left: 20px;
-        padding-right: 30px;
-    }
-    
-    .elonye,
-    .forras {
-        background-color: #0a2b42;
-    }
-    
-    nav ul li::before {
-        position: absolute;
-        content: "";
-        z-index: 0;
-        width: 100%;
-        height: 7px;
-        bottom: 65px;
-        left: 0;
-        right: 0;
-        background-color: #fff;
-        box-shadow: 0 0 30px 10px #fff, 0 0 60px 30px #f0f, 0 0 100px 50px #0ff;
-        ;
-        visibility: hidden;
-        transform: scaleY(0);
-        transition: all .3s ease-in-out 0s;
-    }
-    
-    nav ul li:hover::before {
-        visibility: visible;
-        transform: scaleY(1);
-    }
-    
-    #logo {
-        float: left;
-    }
-    
-    td {
-        text-align: center;
-        padding: 30px;
-        width: 550px;
-    }
-    
-    th {
-        text-align: center;
-        padding: 10px;
-        font-size: 36px;
-        color: #1BA098;
-    }
-    
-    tr {
-        width: 1100px;
-    }
-    
-    .elony {
-        color: rgb(100, 118, 139);
-        height: 700px;
-        line-height: 77px;
-    }
-    
-    table {
-        border-top: #051622 solid 2px;
-        border-bottom: #051622 solid 2px;
-    }
-    
-    .hatrany {
-        height: 700px;
-        color: rgb(100, 118, 139);
-    }
-    
-    .forraslink {
-        text-decoration: none;
-        color: #1BA098;
-        cursor: pointer;
-    }
-    
-    .forraslink:hover {
-        text-decoration: none;
-        color: #1BA098;
-    }
-    
-    .navbar-nav {
-        float: right;
-        margin: 0;
-    }
-    
-    .navbar-nav>li {
-        float: right;
-    }
-    
-    #kartya1 {
-        font-size: 1px;
-        background-color: #051622;
-        color: #1BA098;
-        border: 0px solid white;
-    }
-    
-    .card-text {
-        font-size: 20px;
-        color: #DEB992;
-    }
-    
-    .card-title {
-        font-size: 36px;
-    }
-    
-    .card-img-top {
-        border-radius: 12%;
-        box-shadow: 7px 7px 4px #333;
-    }
-    
-    #canvas {
-        position: fixed;
-        left: 0;
-        top: 95%;
-        width: 100%;
-        height: 5%;
-        background-color: rgba(0, 0, 0, 1);
-    }
-    
-    #thefile {
-        border: 2px solid #1BA098;
-        float: left;
-        z-index: 1;
-        width: 100%;
-    }
-    
-    audio {
-        left: 10px;
-        bottom: 0px;
-        width: calc(100% - 20px);
-        float: left;
-        z-index: 1;
-    }
-    
-    #canvas {
-        opacity: 0.5;
-        z-index: 0;
-    }
-    
-    .nemkijelolheto {
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-    }
+        
+        nav ul li {
+            padding: 0 1.5rem;
+            cursor: pointer;
+            display: inline-block;
+        }
+        
+        nav ul li a {
+            color: lightgray;
+            padding: 0px;
+            text-decoration: none;
+            transition: 1s;
+            cursor: default;
+            float: right;
+            font-size: 17px;
+        }
+        
+        nav ul li :hover {
+            color: rgb(0, 0, 0);
+            background-color: rgb(1, 46, 65);
+            transition: 0.2s;
+        }
+        
+        #ora {
+            background-image: url(f183cfbe93b17c4dae2896e2610ba077.jpg);
+            background-color: #051622f6;
+            text-align: center;
+            margin: auto;
+            color: #DEB992;
+        }
+        
+        .card {
+            margin: 30px auto;
+            width: 80%;
+            text-align: center;
+        }
+        
+        .container {
+            padding: 40px 80px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: rgba(139, 0, 0, 0);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+        }
+        
+        html {
+            font-size: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+        
+        #particles-js {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            background-image: url(f183cfbe93b17c4dae2896e2610ba077.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            @media only screen and (min-width: 320px) and (max-width: 480px) {
+                background: url(f183cfbe93b17c4dae2896e2610ba077.jpg) no-repeat center center fixed;
+            }
+        }
+        
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 79px;
+            color: #DEB992;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 100;
+            text-transform: uppercase;
+            text-shadow: 0 0 20px #DEB992;
+        }
+        
+        #nav {
+            width: 100%;
+            background-color: #1BA098;
+            color: #333;
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-weight: 100;
+            height: 6rem;
+            line-height: 6rem;
+            border-bottom: solid 2px #DEB992;
+            float: inherit;
+        }
+        
+        .navbar-container {
+            width: 100%;
+        }
+        
+        .fixed {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+        
+        section {
+            width: 100%;
+            height: 200rem;
+            position: relative;
+            background-color: #051622;
+            font-size: 24px;
+            float: left;
+            padding-bottom: 2.5rem;
+        }
+        
+        section h1 {
+            top: 20rem;
+        }
+        
+        h2 {
+            font-size: 48px;
+            color: #DEB992;
+        }
+        
+        .darkmode {
+            background-color: black;
+        }
+        
+        hr {
+            display: block;
+            height: 0px;
+            border: 0;
+            border-top: 2px solid #DEB992;
+            margin: 1em 0;
+            padding: 0;
+            box-shadow: 0 0 20px #DEB992;
+        }
+        
+        .dropdown-menu {
+            background-color: #051622;
+            color: #1BA098;
+            font-size: 16px;
+        }
+        
+        .dropdown-item {
+            color: #1BA098;
+        }
+        
+        footer {
+            position: absolute;
+            bottom: -450%;
+            left: 0;
+            right: 0;
+            font-size: 24px;
+            height: 2.5rem;
+            margin-top: -20000px;
+        }
+        
+        #footer {
+            height: 700px;
+        }
+        
+        #container-wrap {
+            padding-bottom: 2.5rem;
+        }
+        
+        #page-container {
+            position: relative;
+            min-height: 100vh;
+        }
+        
+        .szukseg,
+        .elonye,
+        .kivitelezes,
+        .forras {
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 100%;
+            height: 1000px;
+        }
+        
+        .szoveg-resz {
+            line-height: 62px;
+            padding-left: 20px;
+            padding-right: 30px;
+        }
+        
+        .elonye,
+        .forras {
+            background-color: #0a2b42;
+        }
+        
+        nav ul li::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 7px;
+            bottom: 65px;
+            left: 0;
+            right: 0;
+            background-color: #fff;
+            box-shadow: 0 0 30px 10px #fff, 0 0 60px 30px #f0f, 0 0 100px 50px #0ff;
+            ;
+            visibility: hidden;
+            transform: scaleY(0);
+            transition: all .3s ease-in-out 0s;
+        }
+        
+        nav ul li:hover::before {
+            visibility: visible;
+            transform: scaleY(1);
+        }
+        
+        #logo {
+            float: left;
+        }
+        
+        td {
+            text-align: center;
+            padding: 30px;
+            width: 550px;
+        }
+        
+        th {
+            text-align: center;
+            padding: 10px;
+            font-size: 36px;
+            color: #1BA098;
+        }
+        
+        tr {
+            width: 1100px;
+        }
+        
+        .elony {
+            color: rgb(100, 118, 139);
+            height: 700px;
+            line-height: 77px;
+        }
+        
+        table {
+            border-top: #051622 solid 2px;
+            border-bottom: #051622 solid 2px;
+        }
+        
+        .hatrany {
+            height: 700px;
+            color: rgb(100, 118, 139);
+        }
+        
+        .forraslink {
+            text-decoration: none;
+            color: #1BA098;
+            cursor: pointer;
+        }
+        
+        .forraslink:hover {
+            text-decoration: none;
+            color: #1BA098;
+        }
+        
+        .navbar-nav {
+            float: right;
+            margin: 0;
+        }
+        
+        .navbar-nav>li {
+            float: right;
+        }
+        
+        #kartya1 {
+            font-size: 1px;
+            background-color: #051622;
+            color: #1BA098;
+            border: 0px solid white;
+        }
+        
+        .card-text {
+            font-size: 20px;
+            color: #DEB992;
+        }
+        
+        .card-title {
+            font-size: 36px;
+        }
+        
+        .card-img-top {
+            border-radius: 12%;
+            box-shadow: 7px 7px 4px #333;
+        }
+        
+        #canvas {
+            position: fixed;
+            left: 0;
+            top: 95%;
+            width: 100%;
+            height: 5%;
+            background-color: rgba(0, 0, 0, 1);
+        }
+        
+        #thefile {
+            border: 2px solid #1BA098;
+            float: left;
+            z-index: 1;
+            width: 100%;
+        }
+        
+        audio {
+            left: 10px;
+            bottom: 0px;
+            width: calc(100% - 20px);
+            float: left;
+            z-index: 1;
+        }
+        
+        #canvas {
+            opacity: 0.5;
+            z-index: 0;
+        }
+        
+        .nemkijelolheto {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+         ::-webkit-scrollbar {
+            width: 0;
+        }
+        
+        #scrollpath {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 10px;
+            height: 100%;
+            background: rgba( 255, 255, 255, 0.05);
+            z-index: 30;
+        }
+        
+        #progressbar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 10px;
+            height: 100%;
+            background: linear-gradient(to top, #008aff, #00ffe7);
+            animation: animate 5s linear infinite;
+            z-index: 30;
+            border-radius: 25px;
+        }
+        
+        @keyframes animate {
+            0%,
+            100% {
+                filter: hue-rotate(0deg);
+            }
+            50% {
+                filter: hue-rotate(360deg);
+            }
+        }
+        
+        #progressbar:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, #008aff, #00ffe7);
+            filter: blur(10px);
+        }
+        
+        #progressbar:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, #008aff, #00ffe7);
+            filter: blur(30px);
+        }
