@@ -224,7 +224,7 @@
             left: 0;
             right: 0;
             background-color: #fff;
-            box-shadow: 0 0 30px 10px #fff, 0 0 60px 30px #f0f, 0 0 100px 50px #0ff;
+            box-shadow: 0 0 30px 5px #fff, 0 0 60px 10px #f0f, 0 0 100px 20px #0ff;
             ;
             visibility: hidden;
             transform: scaleY(0);
